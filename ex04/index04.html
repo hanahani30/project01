@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>User</h1>
+
+    <form action="#" method="post">
+        
+        <p>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required minlength="3">
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+        </p>
+
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </p>
+
+        <p>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select Country --</option>
+                <option value="jordan">Jordan</option>
+                <option value="palestine">Palestine</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="30"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">I agree to the terms and conditions</label>
+        </p>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
